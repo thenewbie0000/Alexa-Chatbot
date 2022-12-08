@@ -44,10 +44,6 @@ def run_alexa():
         print(f"Playing {command}")
         pywhatkit.playonyt(command)
 
-    elif 'single' in command:
-        talk("Chup bey bhhosdeekay.")
-        talk("I have a boyfriend.")
-
     elif 'time' in command:
         time = datetime.datetime.now().strftime(
             '%I:%M %p')  # This gives the string form of time right now. I is the 12 hour format whereas H gives the 24 hour format and p gives whether AM or Pm. We can add S to givce seconds
